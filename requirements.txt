@@ -1,4 +1,0 @@
-crewai[litellm]
-streamlit
-requests
-pysqlite3-binary; sys_platform == "linux"
