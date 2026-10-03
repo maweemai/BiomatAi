@@ -1,13 +1,13 @@
 """Assembles agents + tasks into one sequential CrewAI crew."""
 from crewai import Crew, Process, Task
 
-from biomat_agents.literature_agent import create_literature_agent
-from biomat_agents.biomaterial_agent import create_biomaterial_agent
-from biomat_agents.tissue_biology_agent import create_tissue_biology_agent
-from biomat_agents.mechanical_agent import create_mechanical_agent
-from biomat_agents.degradation_agent import create_degradation_agent
-from biomat_agents.experimental_design_agent import create_experimental_design_agent
-from biomat_agents.critic_agent import create_critic_agent
+from agent_literature import create_literature_agent
+from agent_biomaterial import create_biomaterial_agent
+from agent_tissue_biology import create_tissue_biology_agent
+from agent_mechanical import create_mechanical_agent
+from agent_degradation import create_degradation_agent
+from agent_experimental_design import create_experimental_design_agent
+from agent_critic import create_critic_agent
 
 STEP_NAMES = ["Literature", "Formulations", "Biology", "Mechanics",
               "Degradation", "Experiment plan", "Critic review"]
